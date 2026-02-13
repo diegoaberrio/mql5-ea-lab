@@ -1,0 +1,17 @@
+﻿# OS / Editor
+.DS_Store
+Thumbs.db
+
+# MQL5 build artifacts
+*.ex5
+*.ex4
+
+# Logs / temp
+*.log
+*.tmp
+*.ini
+*.set
+
+# Node / misc (por si usas tooling)
+node_modules
+dist
