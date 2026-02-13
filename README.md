@@ -2,28 +2,62 @@
   <img src="./avatar_raiz.png" width="440" alt="mql5-ea-lab avatar" />
 </p>
 
-# mql5-ea-lab 🤖
+<h1 align="center">mql5-ea-lab 🤖</h1>
 
-Colección de **Expert Advisors e indicadores en MQL5** (MetaTrader 5), orientados a:
-- research / aprendizaje (sin promesas de rentabilidad)
-- arquitectura limpia y reusable
-- gestión de riesgo, trailing y utilidades prácticas
+<p align="center">
+  <b>Expert Advisors e indicadores en MQL5 (MetaTrader 5)</b><br/>
+  Research • Arquitectura limpia • Gestión de riesgo • Utilidades reutilizables
+</p>
 
-> ⚠️ Uso educativo. Lee **DISCLAIMER.md** antes de usar cualquier código.
+<p align="center">
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-2ea44f"></a>
+  <a href="./DISCLAIMER.md"><img alt="Disclaimer" src="https://img.shields.io/badge/disclaimer-educational-orange"></a>
+  <img alt="Platform" src="https://img.shields.io/badge/platform-MetaTrader%205-blue">
+  <img alt="Language" src="https://img.shields.io/badge/language-MQL5-informational">
+</p>
 
-## Contenido
-- **SopRec_CierreCruce_TrStp**  
-  Soporte/Resistencia + SMA + SL/Trailing por ATR + 1 entrada por vela  
-  Carpeta: `Experts/SopRec_CierreCruce_TrStp/`
+---
 
-- **Fibo_CruceCierre_TrailingStop**  
-  Fibonacci (0/50/100) + SL/Trailing por ATR + 1 entrada por vela  
-  Carpeta: `Experts/Fibo_CruceCierre_TrailingStop/`
+## ⚠️ Aviso importante
+Este repositorio es **educativo y de investigación**.  
+No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIMER.md`** antes de usar cualquier código.
 
-## Quick Start (local MT5)
-1. Copia el `.mq5` a tu terminal MT5: `MQL5/Experts/`
-2. Compila en MetaEditor
-3. Prueba en **Strategy Tester** (recomendado: cuenta demo primero)
+---
 
-## Licencia
+## 📦 EAs incluidos
+
+### 1) SopRec_CierreCruce_TrStp
+**Idea:** Soporte/Resistencia + filtro SMA + SL/Trailing por ATR + 1 entrada por vela  
+📁 Carpeta: `Experts/SopRec_CierreCruce_TrStp/`  
+🔗 README: `Experts/SopRec_CierreCruce_TrStp/README.md`
+
+---
+
+### 2) Fibo_CruceCierre_TrailingStop
+**Idea:** Fibonacci (0/50/100) + confirmación por vela + SL/Trailing por ATR + 1 entrada por vela  
+📁 Carpeta: `Experts/Fibo_CruceCierre_TrailingStop/`  
+🔗 README: `Experts/Fibo_CruceCierre_TrailingStop/README.md`
+
+---
+
+## 🚀 Quick Start (MT5 local)
+1) Copia los `.mq5` a tu terminal:
+`MQL5/Experts/`
+
+2) Abre **MetaEditor** → compila
+
+3) Abre **Strategy Tester** y prueba en **demo** primero  
+(Sugerencia: empieza por **H1** y luego compara con M30/H4)
+
+---
+
+## 🧪 Estándar de pruebas (recomendado)
+- Sensibilidad a **spread** y **slippage**
+- Diferentes **sesiones** (London / NY)
+- Símbolos con spreads distintos
+- Backtest en rangos de fechas diferentes (mercado tendencial vs lateral)
+
+---
+
+## 📝 Licencia
 MIT — ver `LICENSE`

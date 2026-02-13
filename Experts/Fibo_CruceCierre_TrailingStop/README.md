@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="./avatar.png" width="440" alt="SopRec_CierreCruce_TrStp avatar" />
+  <img src="./assets/avatar.png" width="440" alt="Fibo_CruceCierre_TrailingStop avatar" />
 </p>
 
-<h1 align="center">SopRec_CierreCruce_TrStp (MQL5 EA)</h1>
+<h1 align="center">Fibo_CruceCierre_TrailingStop (MQL5 EA)</h1>
 
 <p align="center">
-  <b>Soporte/Resistencia • Filtro SMA • SL/Trailing por ATR • 1 entrada por vela</b>
+  <b>Fibonacci 0/50/100 • Confirmación por vela • SL/Trailing por ATR • 1 entrada por vela</b>
 </p>
 
 <p align="center">
@@ -18,16 +18,16 @@
 ---
 
 ## 🧠 Idea
-**Soporte/Resistencia + filtro SMA + SL/Trailing por ATR + 1 entrada por vela**  
+**Fibonacci (0/50/100) + confirmación por vela (cruce/cierre) + SL/Trailing por ATR + 1 entrada por vela**  
 **Enfoque:** research / educativo (sin promesas de rentabilidad)  
 **Autor:** Diego — diegoincode
 
 ---
 
 ## ✅ Qué hace
-- Calcula **Resistencia** (máximo) y **Soporte** (mínimo) en una ventana de velas (`NumeroVelasCalculo`)
-- Filtra tendencia con **SMA** (`periodo_ema`)
-- Genera señal por patrón de vela + relación con S/R (`cruce_compra` / `cruce_venta`)
+- Calcula niveles **Fibo 0% / 50% / 100%** usando el **mínimo y máximo** de una ventana (`NumeroVelasFibo`)
+- Genera señales con lógica de vela + relación con niveles (`cruce_compra` / `cruce_venta`)
+- Dibuja el objeto **Fibonacci** en el gráfico (**solo en modo normal**, no optimización)
 - Aplica **SL por ATR** (`SL_ATR_Mult`) y **Trailing por ATR** (`Trail_ATR_Mult`)
 - Controla **1 operación por vela** (usa el tiempo de barra)
 
@@ -35,10 +35,10 @@
 
 ## 🚀 Instalación (MT5)
 1) Copia este archivo:
-`SopRec_CierreCruce_TrStp.mq5`
+`Fibo_CruceCierre_TrailingStop.mq5`
 
 a:
-`MQL5/Experts/SopRec_CierreCruce_TrStp/`
+`MQL5/Experts/Fibo_CruceCierre_TrailingStop/`
 
 2) Abre MetaEditor → compila  
 3) MT5 → Strategy Tester → selecciona el EA
@@ -54,31 +54,29 @@ a:
 | ATR | ATR_Period | periodo ATR |
 | ATR | SL_ATR_Mult | SL = ATR * mult |
 | ATR | Trail_ATR_Mult | trailing step = ATR * mult |
-| Tendencia | periodo_ema | periodo SMA (nombre histórico) |
-| S/R | NumeroVelasCalculo | ventana para soporte/resistencia |
+| Fibo | NumeroVelasFibo | ventana para max/min (anclas Fibonacci) |
 
 ---
 
 ## 🧪 Cómo probar (recomendado)
 - Timeframe sugerido: empieza por **H1** (luego compara con M30/H4)
 - Activa **Every tick based on real ticks** si tu broker lo permite
-- Revisa sensibilidad a **spread/slippage** y sesiones (London/NY)
+- Revisa sensibilidad a **spread/slippage**, sesiones y símbolos con spreads distintos
 
 ### Quick settings (punto de partida)
 - `RiskPercent`: **1.0**
 - `ATR_Period`: **14**
 - `SL_ATR_Mult`: **1.50**
 - `Trail_ATR_Mult`: **1.00**
-- `periodo_ema`: **50**
-- `NumeroVelasCalculo`: **100**
+- `NumeroVelasFibo`: **100**
 
 > Estos valores son un punto de partida para investigación. Ajusta por símbolo/timeframe/spread.
 
 ---
 
 ## 🧩 Notas técnicas
-- En modo normal dibuja líneas y HUD; en optimización se minimizan objetos para rendimiento.
-- Lógica “1 trade por vela” controlada por el tiempo de la barra (robusto en tester).
+- En optimización se evita dibujar objetos/estética para acelerar el tester.
+- La lógica de 1 trade por vela se controla con el tiempo de la barra (robusto en Strategy Tester).
 
 ---
 
