@@ -1,7 +1,7 @@
 # mql5-ea-lab 🤖
 
 <p align="center">
-  <img src="./avatar_raiz.png" width="220" alt="mql5-ea-lab avatar" />
+  <img src="./avatar_raiz.png" width="440" alt="mql5-ea-lab avatar" />
 </p>
 
 Colección de **Expert Advisors e indicadores en MQL5** (MetaTrader 5), orientados a:
