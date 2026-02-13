@@ -1,6 +1,8 @@
 # SopRec_CierreCruce_TrStp (MQL5 EA)
 
-![Avatar](./assets/avatar.png)
+<p align="center">
+  <img src="./avatar.png" width="440" alt="mql5-ea-lab avatar" />
+</p>
 
 **Idea:** Soporte/Resistencia + filtro SMA + SL/Trailing por ATR + 1 entrada por vela  
 **Enfoque:** research / educativo (sin promesas de rentabilidad)  
