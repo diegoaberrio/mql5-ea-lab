@@ -1,8 +1,8 @@
-# mql5-ea-lab 🤖
-
 <p align="center">
   <img src="./avatar_raiz.png" width="440" alt="mql5-ea-lab avatar" />
 </p>
+
+# mql5-ea-lab 🤖
 
 Colección de **Expert Advisors e indicadores en MQL5** (MetaTrader 5), orientados a:
 - research / aprendizaje (sin promesas de rentabilidad)
@@ -15,6 +15,10 @@ Colección de **Expert Advisors e indicadores en MQL5** (MetaTrader 5), orientad
 - **SopRec_CierreCruce_TrStp**  
   Soporte/Resistencia + SMA + SL/Trailing por ATR + 1 entrada por vela  
   Carpeta: `Experts/SopRec_CierreCruce_TrStp/`
+
+- **Fibo_CruceCierre_TrailingStop**  
+  Fibonacci (0/50/100) + SL/Trailing por ATR + 1 entrada por vela  
+  Carpeta: `Experts/Fibo_CruceCierre_TrailingStop/`
 
 ## Quick Start (local MT5)
 1. Copia el `.mq5` a tu terminal MT5: `MQL5/Experts/`
