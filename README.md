@@ -40,6 +40,12 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 
 ---
 
+### 3) PrecioEma_CierreCruce_TrailingStop
+**Idea:** Precio vs EMA (SMA) + cruces + SL/Trailing por ATR + 1 entrada por vela  
+📁 Carpeta: `Experts/PrecioEma_CierreCruce_TrailingStop/`  
+🔗 README: `Experts/PrecioEma_CierreCruce_TrailingStop/README.md`
+
+
 ## 🚀 Quick Start (MT5 local)
 1) Copia los `.mq5` a tu terminal:
 `MQL5/Experts/`
