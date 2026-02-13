@@ -19,6 +19,7 @@
 ---
 
 ## ⚠️ Aviso importante
+
 Este repositorio es **educativo y de investigación**.  
 No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIMER.md`** antes de usar cualquier código.
 
@@ -27,6 +28,7 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 ## 📦 EAs incluidos
 
 ### 1) SopRec_CierreCruce_TrStp
+
 **Idea:** Soporte/Resistencia + filtro SMA + SL/Trailing por ATR + 1 entrada por vela  
 📁 Carpeta: `Experts/SopRec_CierreCruce_TrStp/`  
 🔗 README: `Experts/SopRec_CierreCruce_TrStp/README.md`
@@ -34,6 +36,7 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 ---
 
 ### 2) Fibo_CruceCierre_TrailingStop
+
 **Idea:** Fibonacci (0/50/100) + confirmación por vela + SL/Trailing por ATR + 1 entrada por vela  
 📁 Carpeta: `Experts/Fibo_CruceCierre_TrailingStop/`  
 🔗 README: `Experts/Fibo_CruceCierre_TrailingStop/README.md`
@@ -41,6 +44,7 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 ---
 
 ### 3) PrecioEma_CierreCruce_TrailingStop
+
 **Idea:** Precio vs EMA (SMA) + cruces + SL/Trailing por ATR + 1 entrada por vela  
 📁 Carpeta: `Experts/PrecioEma_CierreCruce_TrailingStop/`  
 🔗 README: `Experts/PrecioEma_CierreCruce_TrailingStop/README.md`
@@ -55,18 +59,29 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 
 ---
 
+### 5) Cruce_BB
+
+**Idea:** Bollinger (media) + ADX + MACD + Stochastic + confirmación por cruce/cierre + SL/Trailing por ATR + 1 entrada por vela  
+ Carpeta: `Experts/Cruce_BB/`a
+📁 Carpeta: `Experts/Cruce_BB/`
+🔗 README: `Experts/Cruce_BB/README.md`
+
+---
+
 ## 🚀 Quick Start (MT5 local)
-1) Copia los `.mq5` a tu terminal:
-`MQL5/Experts/`
 
-2) Abre **MetaEditor** → compila
+1. Copia los `.mq5` a tu terminal:
+   `MQL5/Experts/`
 
-3) Abre **Strategy Tester** y prueba en **demo** primero  
-(Sugerencia: empieza por **H1** y luego compara con M30/H4)
+2. Abre **MetaEditor** → compila
+
+3. Abre **Strategy Tester** y prueba en **demo** primero  
+   (Sugerencia: empieza por **H1** y luego compara con M30/H4)
 
 ---
 
 ## 🧪 Estándar de pruebas (recomendado)
+
 - Sensibilidad a **spread** y **slippage**
 - Diferentes **sesiones** (London / NY)
 - Símbolos con spreads distintos
@@ -75,4 +90,5 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 ---
 
 ## 📝 Licencia
+
 MIT — ver `LICENSE`
