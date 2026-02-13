@@ -45,6 +45,16 @@ No constituye asesoramiento financiero ni garantiza resultados. Lee **`DISCLAIME
 📁 Carpeta: `Experts/PrecioEma_CierreCruce_TrailingStop/`  
 🔗 README: `Experts/PrecioEma_CierreCruce_TrailingStop/README.md`
 
+---
+
+
+### 4) CruceEmas_CierreCond_TrailngStop
+
+**Idea:** Cruce EMA rápida/lenta + confirmación por pendiente + SL/Trailing por ATR + 1 entrada por vela
+📁 Carpeta: `Experts/CruceEmas_CierreCond_TrailngStop/`
+🔗 README: `Experts/CruceEmas_CierreCond_TrailngStop/README.md`
+
+
 
 ## 🚀 Quick Start (MT5 local)
 1) Copia los `.mq5` a tu terminal:
